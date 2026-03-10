@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/gradle.properties",
+      "selection": {
+        "end": {
+          "column": 24,
+          "index": 288,
+          "line": 8
+        },
+        "start": {
+          "column": 24,
+          "index": 288,
+          "line": 8
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/PointStreak/gradle.properties"
+}

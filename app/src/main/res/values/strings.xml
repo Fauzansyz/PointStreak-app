@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PointStreak</string>
+
+    <string name="start_coding">Start Coding</string>
+    <string name="stop_coding">Stop Coding</string>
+
+    <string name="coding_streak">Coding Streak</string>
+    <string name="today_time">Today Coding</string>
+
+</resources>
