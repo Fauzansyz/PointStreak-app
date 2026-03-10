@@ -1,0 +1,95 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/kotlin/com/zandeveloper/io/pointstreak/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 25,
+          "index": 233,
+          "line": 7
+        },
+        "start": {
+          "column": 25,
+          "index": 233,
+          "line": 7
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 35,
+          "index": 381,
+          "line": 7
+        },
+        "start": {
+          "column": 35,
+          "index": 381,
+          "line": 7
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/res/menu/bottom_menu.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/kotlin/com/zandeveloper/io/pointstreak/ui/HomeFragment.kt",
+      "selection": {
+        "end": {
+          "column": 34,
+          "index": 315,
+          "line": 9
+        },
+        "start": {
+          "column": 34,
+          "index": 315,
+          "line": 9
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/kotlin/com/zandeveloper/io/pointstreak/ui/StatsFragment.kt",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": 764,
+          "line": 29
+        },
+        "start": {
+          "column": 4,
+          "index": 764,
+          "line": 29
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/res/layout/fragment_stats.xml",
+      "selection": {
+        "end": {
+          "column": 31,
+          "index": 347,
+          "line": 10
+        },
+        "start": {
+          "column": 31,
+          "index": 347,
+          "line": 10
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/PointStreak/app/src/main/res/layout/activity_main.xml"
+}
