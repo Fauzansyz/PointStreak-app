@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
     
     val view =  inflater.inflate(R.layout.fragment_home, container, false)
     var isRunning = false
-    var startTime = 0L
+    var startTime = System.currentTimeMillis()
 
     timerText = view.findViewById(R.id.timerText)
         startButton = view.findViewById(R.id.startButton)
