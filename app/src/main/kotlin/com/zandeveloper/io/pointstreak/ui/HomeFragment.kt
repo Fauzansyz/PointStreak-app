@@ -40,6 +40,7 @@ while (true) {
                  val elapsed = System.currentTimeMillis() - startTime
 
          val totalSeconds = elapsed / 1000
+
          val hours = totalSeconds / 3600
                                                             val minutes = (totalSeconds % 3600) / 60
                                                               val seconds = totalSeconds % 60
@@ -48,7 +49,7 @@ while (true) {
                                                                 timerText.text = formattedTime
                                                                  }
 
-                                                                                                                delay(1000)
+                                                                                                                delay(300)
                                                                                                                     }
           }
         }
