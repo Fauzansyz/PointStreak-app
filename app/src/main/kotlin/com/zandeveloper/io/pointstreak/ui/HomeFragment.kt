@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
     
     val view =  inflater.inflate(R.layout.fragment_home, container, false)
     var isRunning = false
-    var time = 0
+    var startTime = 0L
 
     timerText = view.findViewById(R.id.timerText)
         startButton = view.findViewById(R.id.startButton)
@@ -37,22 +37,20 @@ class HomeFragment : Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
 while (true) {
           if (isRunning) {
-                        val elapsed = System.currentTimeMillis() - startTime
+                 val elapsed = System.currentTimeMillis() - startTime
 
-                                    val totalSeconds = elapsed / 1000
-                                                val hours = totalSeconds / 3600
+         val totalSeconds = elapsed / 1000
+         val hours = totalSeconds / 3600
                                                             val minutes = (totalSeconds % 3600) / 60
-                                                                        val seconds = totalSeconds % 60
+                                                              val seconds = totalSeconds % 60
 
-                                                                                    val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-                                                                                                timerText.text = formattedTime
-                                                                                                        }
+                                                               val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+                                                                timerText.text = formattedTime
+                                                                 }
 
                                                                                                                 delay(1000)
                                                                                                                     }
           }
-}
-    }
         }
 
         return view 
