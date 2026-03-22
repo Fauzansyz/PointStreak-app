@@ -47,10 +47,10 @@ while (true) {
 
                                                                val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
                                                                 timerText.text = formattedTime
+                                                                startButton.text = "Pause coding"
                                                                  }
-
-                                                                                                                delay(300)
-                                                                                                                    }
+                                                               delay(300)
+                                                                  }
           }
         }
 
