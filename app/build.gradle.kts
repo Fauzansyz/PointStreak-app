@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.zandeveloper.io.pointstreak"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.zandeveloper.io.pointstreak"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
