@@ -27,6 +27,7 @@ class HomeFragment : Fragment() {
     
     val view =  inflater.inflate(R.layout.fragment_home, container, false)
     var isRunning = false
+    var pauseOffset = 0L
     var startTime = System.currentTimeMillis()
 
     timerText = view.findViewById(R.id.timerText)
@@ -34,10 +35,11 @@ class HomeFragment : Fragment() {
 
         startButton.setOnClickListener {
             isRunning = !isRunning
+            buttonPaused = !buttonPaused
         viewLifecycleOwner.lifecycleScope.launch {
 while (true) {
           if (isRunning) {
-                 val elapsed = System.currentTimeMillis() - startTime
+                 val elapsed = System.currentTimeMillis() - pauseOffset
 
          val totalSeconds = elapsed / 1000
 
@@ -46,13 +48,22 @@ while (true) {
                                                               val seconds = totalSeconds % 60
 
                                                                val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-                                                                timerText.text = formattedTime
-                                                                startButton.text = "Pause coding"
-                                                                 }
+                                                                timerText.text = formattedTime 
                                                                delay(300)
-                                                                  }
-          }
+                                                                  } else { 
+                 val elapsed = System.currentTimeMillis() - pauseOffset
+
+         val totalSeconds = elapsed / 1000
+
+         val hours = totalSeconds / 3600
+                                                            val minutes = (totalSeconds % 3600) / 60
+                                                              val seconds = totalSeconds % 60
+
+                                                               val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+                                                                timerText.text = formattedTime                               }
+            }
         }
+      }
 
         return view 
     }
