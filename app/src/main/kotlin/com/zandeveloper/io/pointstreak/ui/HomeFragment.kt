@@ -60,8 +60,10 @@ while (true) {
                                                               val seconds = totalSeconds % 60
 
                                                                val formattedTime = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-                                                                timerText.text = formattedTime                               }
+                                                                timerText.text = formattedTime
+                                                                delay(300)
             }
+        }
         }
       }
 
