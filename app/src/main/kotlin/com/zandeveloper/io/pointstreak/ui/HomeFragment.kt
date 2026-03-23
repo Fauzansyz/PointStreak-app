@@ -40,7 +40,7 @@ while (true) {
           if (isRunning) {
             startTime = System.currentTimeMillis() - pauseOffset
 
-         val totalSeconds = elapsed / 1000
+         val totalSeconds = startTime / 1000
 
          val hours = totalSeconds / 3600
                                                             val minutes = (totalSeconds % 3600) / 60
@@ -53,7 +53,7 @@ while (true) {
 
             pauseOffset = System.currentTimeMillis() - startTime
 
-         val totalSeconds = elapsed / 1000
+         val totalSeconds = startTime / 1000
 
          val hours = totalSeconds / 3600
                                                             val minutes = (totalSeconds % 3600) / 60
