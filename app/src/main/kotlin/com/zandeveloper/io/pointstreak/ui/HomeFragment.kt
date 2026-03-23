@@ -28,18 +28,17 @@ class HomeFragment : Fragment() {
     val view =  inflater.inflate(R.layout.fragment_home, container, false)
     var isRunning = false
     var pauseOffset = 0L
-    var startTime = System.currentTimeMillis()
+    var startTime = 0L
 
     timerText = view.findViewById(R.id.timerText)
         startButton = view.findViewById(R.id.startButton)
 
         startButton.setOnClickListener {
             isRunning = !isRunning
-            buttonPaused = !buttonPaused
         viewLifecycleOwner.lifecycleScope.launch {
 while (true) {
           if (isRunning) {
-                 val elapsed = System.currentTimeMillis() - pauseOffset
+            startTime = System.currentTimeMillis() - pauseOffset
 
          val totalSeconds = elapsed / 1000
 
@@ -51,7 +50,8 @@ while (true) {
                                                                 timerText.text = formattedTime 
                                                                delay(300)
                                                                   } else { 
-                 val elapsed = System.currentTimeMillis() - pauseOffset
+
+            pauseOffset = System.currentTimeMillis() - startTime
 
          val totalSeconds = elapsed / 1000
 
